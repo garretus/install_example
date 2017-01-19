@@ -1,0 +1,36 @@
+=== Base to make a python script for linux command line ===
+
+I have to develop several different bash commands for any linux distribution. I decided to program it with python.
+This is my base repo to use as template for all of this commands.
+
+```bash
+$python test_ module.py
+```
+
+is not cool and i want to be executed like
+
+```bash
+$ test_module
+```
+
+... from https://wiki.python.org/moin/Distutils/Tutorial
+
+
+1. Download/clone this repo
+
+2. On the project directory:
+ ```bash
+ $ python setup.py sdist
+ ```
+3.- To test the tarball
+```bash
+ $ cd dist
+ $ tar xzf install_example-0.0.1.tar.gz
+ $ cd install_example-0.0.1/
+ $ sudo python setup.py install
+ ```
+
+4.- After this type:
+```bash
+$ install_example_runner
+ ```

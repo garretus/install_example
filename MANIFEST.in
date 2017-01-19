@@ -1,0 +1,2 @@
+include install_example_runner README
+recursive-include install_example/config *
